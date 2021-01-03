@@ -1,10 +1,12 @@
 import styled from 'styled-components';
-
+import withHovering from './HoveringHOC';
 import droneImage from '../images/drone.png';
 
-const Drone = styled.img.attrs({
+const DroneStyled = styled.img.attrs({
   src: `${droneImage}`
 })`
   width: 50px;
 `;
-export default Drone;
+
+
+export default withHovering(DroneStyled);

@@ -1,10 +1,12 @@
 import styled from 'styled-components';
-
+import withHovering from './HoveringHOC';
 import tractorImage from '../images/tractor.png';
 
-const Tractor = styled.img.attrs({
+const TractorStyled = styled.img.attrs({
   src: `${tractorImage}`
 })`
   width: 50px;
 `;
-export default Tractor;
+
+
+export default withHovering(TractorStyled);
